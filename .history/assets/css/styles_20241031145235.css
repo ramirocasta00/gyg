@@ -721,7 +721,7 @@ img {
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 769px) {
   body {
     margin: 0;
   }
@@ -809,7 +809,7 @@ img {
 }
 
 /* For large devices */
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1024px) {
   .container {
     margin-left: auto;
     margin-right: auto;
