@@ -933,7 +933,7 @@ img {
     box-sizing: border-box; /* Asegúrate de que el padding no afecte el ancho total */
     flex-wrap: wrap; /* Permite que los artículos se envuelvan si no hay suficiente espacio */
     justify-content: center; /* Centra horizontalmente los productos */
-    gap: 35px; /* Espacio entre los productos, ajusta según sea necesario */
+    gap: 30px; /* Espacio entre los productos, ajusta según sea necesario */
   }
   .products__card {
     height: 140px;

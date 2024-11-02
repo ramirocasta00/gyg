@@ -903,7 +903,7 @@ img {
   }
   .specs__img {
     position: initial;
-    width: 350px;
+    width: 420px;
     right: -4rem;
   }
   .case__container {
@@ -929,18 +929,18 @@ img {
     padding-top: 4rem;
     max-width: 1200px; /* Ajusta el ancho máximo según sea necesario */
     margin: 0 auto; /* Centra horizontalmente */
-    padding: 20px; /* Añade espacio interior */
+    padding: 100px; /* Añade espacio interior */
     box-sizing: border-box; /* Asegúrate de que el padding no afecte el ancho total */
     flex-wrap: wrap; /* Permite que los artículos se envuelvan si no hay suficiente espacio */
     justify-content: center; /* Centra horizontalmente los productos */
-    gap: 35px; /* Espacio entre los productos, ajusta según sea necesario */
+    gap: 20px; /* Espacio entre los productos, ajusta según sea necesario */
   }
   .products__card {
-    height: 140px;
-    padding: 1.2rem;
+    height: 152px;
+    padding: .85rem;
   }
   .products__img {
-    width: 110px;
+    width: 95px;
   }
   .footer__container {
     display: grid;

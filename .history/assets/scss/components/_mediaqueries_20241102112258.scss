@@ -213,6 +213,7 @@
     .container{
         max-width: 1200px; /* Ajusta el valor según sea necesario */
         margin: 0 auto; /* Centra el contenido horizontalmente */
+        padding: 0 20px; /* Agrega un pequeño espacio lateral */
     }
     
     .home{
@@ -234,7 +235,7 @@
     }
 
     .discount__img{
-        width: 420px;
+        width: 350px;
     }
 
     .footer{
