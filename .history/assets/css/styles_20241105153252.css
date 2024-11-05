@@ -804,6 +804,10 @@ img {
   .home__data {
     padding-top: 8rem;
   }
+  .home__title {
+    top: -5rem;
+    left: 3.5rem;
+  }
   .home__description {
     padding-right: 5rem;
   }

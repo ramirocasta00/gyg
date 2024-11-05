@@ -554,9 +554,14 @@ img {
   .section__title {
     font-size: var(--big-font-size);
   }
+  .home__title {
+    top: -4rem;
+    font-size: var(--bigger-font-size);
+  }
   .home__header {
     text-align: center; /* Centra el texto */
   }
+  .home__title,
   .home__subtitle {
     margin: 0 auto; /* Asegúrate de que no haya márgenes laterales que afecten el centrado */
   }
@@ -803,6 +808,10 @@ img {
   }
   .home__data {
     padding-top: 8rem;
+  }
+  .home__title {
+    top: -5rem;
+    left: 3.5rem;
   }
   .home__description {
     padding-right: 5rem;

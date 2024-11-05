@@ -6,6 +6,17 @@
     &__header{
         position: relative;
     }
+    &__title{
+        position: absolute;
+        top: -4rem;
+        left: 1rem;
+        line-height: 6rem;
+        font-size: var(--biggest-font-size);
+        background: var(--text-gradient);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+    }
     &__subtitle{
         font-size: var(--big-font-size);
         margin-bottom: var(--mb-2-5);

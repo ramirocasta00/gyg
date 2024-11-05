@@ -238,6 +238,18 @@ img {
   position: relative;
 }
 
+.home__title {
+  position: absolute;
+  top: -4rem;
+  left: 1rem;
+  line-height: 6rem;
+  font-size: var(--biggest-font-size);
+  background: var(--text-gradient);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
 .home__subtitle {
   font-size: var(--big-font-size);
   margin-bottom: var(--mb-2-5);
@@ -554,9 +566,14 @@ img {
   .section__title {
     font-size: var(--big-font-size);
   }
+  .home__title {
+    top: -4rem;
+    font-size: var(--bigger-font-size);
+  }
   .home__header {
     text-align: center; /* Centra el texto */
   }
+  .home__title,
   .home__subtitle {
     margin: 0 auto; /* Asegúrate de que no haya márgenes laterales que afecten el centrado */
   }
@@ -801,8 +818,17 @@ img {
     position: relative;
     grid-template-columns: repeat(2, 2fr);
   }
+  .home__img {
+    width: 375px;
+    top: 2rem;
+    left: 4rem;
+  }
   .home__data {
     padding-top: 8rem;
+  }
+  .home__title {
+    top: -5rem;
+    left: 3.5rem;
   }
   .home__description {
     padding-right: 5rem;
