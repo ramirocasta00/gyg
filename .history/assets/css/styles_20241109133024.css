@@ -740,9 +740,6 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    mask-image: linear-gradient(
-      black, transparent
-    )
   }
   .img{
     position: relative;

@@ -743,6 +743,7 @@ img {
     mask-image: linear-gradient(
       black, transparent
     )
+    web
   }
   .img{
     position: relative;

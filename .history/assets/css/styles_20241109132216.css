@@ -740,9 +740,6 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    mask-image: linear-gradient(
-      black, transparent
-    )
   }
   .img{
     position: relative;
@@ -852,9 +849,6 @@ img {
     justify-content: center;
     align-items: center;
     margin-left: 100px;
-    mask-image: linear-gradient(
-      black, transparent
-    )
   }
   .img{
     position: relative;
@@ -863,8 +857,7 @@ img {
     z-index: 2; /* Asegura que la imagen esté encima del gradiente */
     mask-image: linear-gradient(
       black 80%,
-      transparent
-      )
+      transparent);
   }
   }
   .home__data {

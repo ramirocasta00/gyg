@@ -900,6 +900,7 @@ img {
   }
   .nav {
     height: calc(var(--header-height) + 1.5rem);
+    background: transparent;
   }
   .nav__logo {
     width: 6rem;
