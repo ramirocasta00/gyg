@@ -835,11 +835,11 @@ img {
   }
   .blur{
     position: absolute;
-    box-shadow: 0 0 1500px 50px #0424D9;
+    box-shadow: 0 0 1000px 800px #0424D9;
     z-index: -1;
     top: 0;
     right: 100px; /* Alinea el gradiente a la derecha */
-    width: 50%; /* Ajusta el tamaño del área del blur */
+    width: 40%; /* Ajusta el tamaño del área del blur */
   }
   .home__img {
     position: relative; /* Para poder colocar la imagen y el gradiente juntos */
