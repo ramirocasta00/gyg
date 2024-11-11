@@ -679,9 +679,6 @@ img {
   .specs__img {
     display: none;
   }
-  .specs__container {
-    text-align: center;
-  }
   .button--flex{
     display: flex;
     justify-content: center;
@@ -694,6 +691,7 @@ img {
     align-items: center;
     text-align: center;
   }
+  .case__
   .case__img {
     display: none;
   }
@@ -715,7 +713,7 @@ img {
     display: none;
   }
   .products__container {
-    grid-template-columns: 50%;
+    grid-template-columns: 142px;
     justify-content: center;
   }
 } 

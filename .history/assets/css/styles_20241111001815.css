@@ -665,7 +665,7 @@ img {
     margin: 0 auto; /* Asegúrate de que no haya márgenes laterales que afecten el centrado */
   }
   .home__data {
-    padding-top: 0;
+    padding-top: 1rem;
   }
   .home__footer{
     padding-top: 2rem;
@@ -673,14 +673,8 @@ img {
   .home__description {
     font-size: var(--small-font-size);
   }
-  .home__img {
-    display: none;
-  }
   .specs__img {
     display: none;
-  }
-  .specs__container {
-    text-align: center;
   }
   .button--flex{
     display: flex;
@@ -715,46 +709,18 @@ img {
     display: none;
   }
   .products__container {
-    grid-template-columns: 50%;
+    grid-template-columns: 142px;
     justify-content: center;
   }
 } 
 
 /* For medium devices */
 @media screen and (min-width: 481px) and (max-width: 768px) {
-  :root {
-    --biggest-font-size: 6rem;
-    --bigger-font-size: 3rem;
-    --big-font-size: 3rem;
-    --h2-font-size: 1rem;
-    --h3-font-size: 1rem;
-    --normal-font-size: .8rem;
-    --small-font-size: .675rem;
-    --smaller-font-size: .613rem;
-  }
-  .container {
-    max-width: 800px; /* Ajusta el valor según sea necesario */
-    margin: 0 auto; /* Centra el contenido horizontalmente */
-    padding: 0 40px; /* Agrega un pequeño espacio lateral */
-  }
-  .section {
-    margin: 0 auto;
-  }
   .home__container {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1rem;
-    flex-direction: row-reverse; /* Imagen a la derecha */
-    z-index: 0;
-    background-color: transparent;
+    grid-template-columns: 1.2fr 1fr;
   }
   .home__data {
-    padding-top: 0;
-  }
-  .home__subtitle {
-    font-size: 9vh;
+    padding-top: 2rem;
   }
   .specs__img {
     position: initial;
@@ -772,24 +738,24 @@ img {
     padding: 0;
   }
   .case__container {
-    column-gap: 5rem;
+    grid-template-columns: max-content 250px;
+    justify-content: center;
+    align-items: center;
+    column-gap: 2rem;
   }
   .discount__img {
     position: initial;
   }
   .discount__container {
-    margin: 40px;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     align-items: center;
   }
-
   .products__container {
-    grid-template-columns: repeat(3, 1fr); /* Dos columnas para los productos */
-    gap: 3rem;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas para los productos */
+    gap: 2rem;
     justify-content: center;
   }
-
   .footer__container {
     display: flex;
     flex-direction: column; /* Asegúrate de que el contenedor sea vertical en móviles */
@@ -943,6 +909,9 @@ img {
     justify-self: end; /* Alinea el formulario a la derecha dentro de su columna */
     margin-left: 10px;
     width: 80%;
+  }
+  .footer__form .button--flex {
+    pad;
   }
 }
 

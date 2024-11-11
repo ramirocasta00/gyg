@@ -715,7 +715,7 @@ img {
     display: none;
   }
   .products__container {
-    grid-template-columns: 50%;
+    grid-template-columns: 100%;
     justify-content: center;
   }
 } 
