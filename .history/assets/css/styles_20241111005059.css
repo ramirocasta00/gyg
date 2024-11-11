@@ -969,7 +969,7 @@ img {
     align-items: center;
     margin-left: 50px;
     mask-image: linear-gradient(
-      black, transparent 95%
+      black, transparent 100%
     )
   }
   .home__data {
