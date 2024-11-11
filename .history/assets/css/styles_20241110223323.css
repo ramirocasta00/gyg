@@ -806,6 +806,7 @@ img {
   }
   .section {
     margin: 0 auto;
+    padding: 6rem 0 2rem;
   }
   .nav {
     height: calc(var(--header-height) + 1.5rem);
@@ -826,26 +827,22 @@ img {
   }
   .home__container {
     position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1rem;
-    flex-direction: row-reverse; /* Imagen a la derecha */
-    z-index: 0;
-    background-color: transparent;
+    grid-template-columns: repeat(2, 1fr);
+    background: transparent;  /* Asegura que el fondo sea transparente */
+    backdrop-filter: blur(10px); /* Aplica el blur */
   }
   .home__data {
     padding-top: 8rem;
   }
   .home__img {
     position: relative; /* Para poder colocar la imagen y el gradiente juntos */
-    width: 130%;
+    width: 100%;
+    height: 100vh; /* Ajusta según lo que necesites */
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 50px;
     mask-image: linear-gradient(
-      black, transparent 90%
+      black, transparent
     )
   }
   .img{
@@ -853,9 +850,6 @@ img {
     max-width: 100%;
     height: auto;
     z-index: 2; /* Asegura que la imagen esté encima del gradiente */
-  }
-  .home__subtitle {
-    font-size: 8.2vh;
   }
   .specs__container {
     grid-template-columns: repeat(2, 1fr);
@@ -919,29 +913,44 @@ img {
 
 /* For large devices */
 @media screen and (min-width: 1025px) {
-  .container {
-    margin: 0 auto;
+
+  .home__container, .specs__container, .discount__container {
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
   }
   .home__container {
     position: relative;
+    grid-template-columns: repeat(2, 2fr);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: .5rem;
+    gap: 1rem;
     flex-direction: row-reverse; /* Imagen a la derecha */
     z-index: 0;
     background-color: transparent;
   }
   .home__img {
     position: relative; /* Para poder colocar la imagen y el gradiente juntos */
-    width: 130%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 50px;
+    margin-left: 100px;
     mask-image: linear-gradient(
-      black, transparent 90%
+      black, transparent 20%
     )
+  }
+  .img{
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    z-index: 2; /* Asegura que la imagen esté encima del gradiente */
+    mask-image: linear-gradient(
+      black 80%,
+      transparent
+      )
+  }
   }
   .home__data {
     padding-top: 0;
@@ -953,8 +962,6 @@ img {
     width: 180px;
   }
   .discount__container {
-    gap: 4rem;
-    align-items: center;
     max-width: 850px; /* Ajusta el ancho máximo según prefieras */
     margin: 0 auto; /* Centra horizontalmente */
     padding: 20px; /* Añade espacio interior */
@@ -1051,4 +1058,4 @@ img {
     margin-left: 20px;
     width: 80%;
   }
-}
+
