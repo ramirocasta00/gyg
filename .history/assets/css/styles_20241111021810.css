@@ -21,7 +21,7 @@
   --biggest-font-size: 5rem;
   --bigger-font-size: 3.5rem;
   --big-font-size: 2.5rem;
-  --h2-font-size: 1rem;
+  --h2-font-size: 1.25rem;
   --h3-font-size: 1.125rem;
   --normal-font-size: .938rem;
   --small-font-size: .813rem;
@@ -343,9 +343,6 @@ img {
   top: 2rem;
   right: -4rem;
   margin-left: 100px;
-  mask-image: linear-gradient(
-    black, transparent 90%
-  )
 }
 
 .blur__nosotros{
@@ -1072,6 +1069,9 @@ img {
   }
   .products__img {
     width: 110px;
+  }
+  .footer__section {
+    margin: 0;
   }
   .footer__container {
     display: grid;

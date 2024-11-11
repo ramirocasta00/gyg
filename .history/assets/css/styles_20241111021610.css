@@ -21,7 +21,7 @@
   --biggest-font-size: 5rem;
   --bigger-font-size: 3.5rem;
   --big-font-size: 2.5rem;
-  --h2-font-size: 1rem;
+  --h2-font-size: 1.25rem;
   --h3-font-size: 1.125rem;
   --normal-font-size: .938rem;
   --small-font-size: .813rem;
@@ -343,9 +343,6 @@ img {
   top: 2rem;
   right: -4rem;
   margin-left: 100px;
-  mask-image: linear-gradient(
-    black, transparent 90%
-  )
 }
 
 .blur__nosotros{
@@ -1074,14 +1071,16 @@ img {
     width: 110px;
   }
   .footer__container {
+    margin: 0 auto;
     display: grid;
-    grid-template-columns: 2fr 2fr 4fr;
-    gap: 20px; 
+    grid-template-columns: 2fr 2fr 6fr;
+    gap: 10px; 
     align-items: center;
   }
   .footer__form {
     grid-column: 4; /* Ubica el formulario en la última columna */
     justify-self: end; /* Alinea el formulario a la derecha dentro de su columna */
-    width: 100%;
+    margin-left: 20px;
+    width: 80%;
   }
 }

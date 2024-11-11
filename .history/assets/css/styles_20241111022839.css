@@ -345,7 +345,7 @@ img {
   margin-left: 100px;
   mask-image: linear-gradient(
     black, transparent 90%
-  )
+    )
 }
 
 .blur__nosotros{
