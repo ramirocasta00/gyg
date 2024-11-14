@@ -781,9 +781,9 @@ img {
   :root {
     --biggest-font-size: 6rem;
     --bigger-font-size: 3rem;
-    --big-font-size: 2.3rem;
+    --big-font-size: 3rem;
     --h2-font-size: 1rem;
-    --h3-font-size: .9rem;
+    --h3-font-size: 1rem;
     --normal-font-size: .8rem;
     --small-font-size: .675rem;
     --smaller-font-size: .613rem;
@@ -836,18 +836,15 @@ img {
   }
   .discount__container {
     margin: 0 auto;
+    grid-template-columns: repeat(2, 1;
     justify-items: center;
     align-items: center;
   }
   .discount__title {
     font-size: 1.4rem;
-    margin-bottom: .5rem;
   }
   .discount__img {
     display: none;
-  }
-  .discount__description {
-    margin-bottom: 1rem;
   }
   .products__container {
     grid-template-columns: repeat(3, 1fr); /* Dos columnas para los productos */
