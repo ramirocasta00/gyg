@@ -844,13 +844,13 @@ img {
   }
     
   /* Encabezado de cada categoría */
-  .products__category {
+    .products__category {
     font-size: 1.8rem; /* Tamaño del texto */
     color: #0424d9; /* Color del texto */
     font-weight: bold;
     margin-top: 1.8rem;
     margin-bottom: 1.8rem; /* Espacio debajo del título de categoría */
-  }
+    }
 
   .footer__container {
     display: flex;
@@ -986,23 +986,6 @@ img {
     grid-template-columns: repeat(3, 1fr);
     gap: 3rem 2rem;
     padding-top: 3rem;
-  }
-  /* Encabezados de categoría fuera de la grilla */
-  .products__category-container {
-    margin: 2rem 0; /* Espacio entre cada categoría */
-    text-align: center; /* Centra los encabezados de categoría */
-  }
-  /* Encabezado de la primera categoría */
-  .products__category-container:first-of-type {
-    margin-top: 5rem; /* Ajusta la cantidad de margen como prefieras */
-  }
-  /* Encabezado de cada categoría */
-  .products__category {
-    font-size: 1.8rem; /* Tamaño del texto */
-    color: #0424d9; /* Color del texto */
-    font-weight: bold;
-    margin-top: 1.8rem;
-    margin-bottom: 1.8rem; /* Espacio debajo del título de categoría */
   }
   .products__card {
     height: 152px;

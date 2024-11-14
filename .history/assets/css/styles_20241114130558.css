@@ -1003,7 +1003,7 @@ img {
     font-weight: bold;
     margin-top: 1.8rem;
     margin-bottom: 1.8rem; /* Espacio debajo del título de categoría */
-  }
+    }
   .products__card {
     height: 152px;
     padding: .85rem;
