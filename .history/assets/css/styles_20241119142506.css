@@ -962,7 +962,7 @@ img {
 
   .products__logo {
     position: absolute;
-    top: 2px; /* Reduce la distancia en pantallas pequeñas */
+    top: 7px; /* Reduce la distancia en pantallas pequeñas */
     left: -40px;
     width: 90px; /* Logo más pequeño */
     z-index: 10;

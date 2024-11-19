@@ -420,7 +420,6 @@ img {
   display: none;
 }
 /*=============== PRODUCTS ===============*/
-
 .products__line {
   line-height: 4rem;
 }
@@ -471,21 +470,6 @@ img {
   opacity: 1;
 }
 
-.products__card:hover .products__img {
-  opacity: 0; /* Oculta la imagen del producto al hacer hover */
-  transition: opacity 0.3s ease; /* Suaviza el cambio de visibilidad */
-}
-
-.products__card:hover .products__title {
-  opacity: 0; /* Oculta la imagen del producto al hacer hover */
-  transition: opacity 0.3s ease; /* Suaviza el cambio de visibilidad */
-}
-
-.products__card:hover .products__logo {
-  opacity: 0; /* Oculta la imagen del producto al hacer hover */
-  transition: opacity 0.3s ease; /* Suaviza el cambio de visibilidad */
-}
-
 .products__img {
   width: 100px;
   position: absolute;
@@ -525,15 +509,10 @@ img {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 100%; /* Hace que el contenedor ocupe todo el alto disponible */
-  margin: 1rem;
+  margin: auto;
   transform: translateY(25%);
   transition: .3s ease;
   opacity: 0;
-  display: flex; /* Flexbox para ajustar los contenidos */
-  flex-direction: column; /* Alinea los elementos en columna */
-  justify-content: center; /* Alinea el contenido en la parte central */
-  box-sizing: border-box; /* Incluye el padding y el borde en el tamaño total */
 }
 
 .products__description:hover {
@@ -542,23 +521,9 @@ img {
 }
 
 .products__description p {
-  font-size: 1vh;
-  text-align: justify; /* Alinea el texto en ambos extremos */
-  margin: 0 8px; /* Agrega margen interno para evitar que el texto toque los bordes */
-  padding: 3px; /* Opcional: Espaciado adicional dentro del contenedor */
-  overflow-wrap: break-word; /* Asegura que no se desborden las palabras largas */
-  word-wrap: break-word;
-  word-break: break-word;
-  box-sizing: border-box; /* Considera el padding dentro del ancho total */
-}
-
-.products__description ul {
-  list-style-type: disc; /* Los puntos serán de tipo "disco" */
-  padding-left: 20px; /* Ajusta el espacio a la izquierda de la lista */
-}
-
-.products__description h6 {
-  margin: .3rem;
+  font-size: 8px;
+  margin: 1vh;
+  padding-bottom: .5vh;
 }
 
 /* Encabezados de categoría fuera de la grilla */
@@ -810,56 +775,11 @@ img {
     margin-bottom: 1.8rem; /* Espacio debajo del título de categoría */
   }
   .products__logo {
-    position: absolute;
-    top: 7px; /* Reduce la distancia en pantallas pequeñas */
-    left: -20px;
-    width: 100px; /* Logo más pequeño */
-    z-index: 10;
+    top: 5px; /* Reduce la distancia en pantallas pequeñas */
+    right: 5px;
+    width: 20px; /* Logo más pequeño */
   }
-  .products__card {
-    position: relative;
-  }
-
-  .products__description {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%; /* Hace que el contenedor ocupe todo el alto disponible */
-  margin: 1rem;
-  transform: translateY(25%);
-  transition: .3s ease;
-  opacity: 0;
-  display: flex; /* Flexbox para ajustar los contenidos */
-  flex-direction: column; /* Alinea los elementos en columna */
-  justify-content: center; /* Alinea el contenido en la parte central */
-  box-sizing: border-box; /* Incluye el padding y el borde en el tamaño total */
-}
-
-.products__description:hover {
-  opacity: 1;
-  transform: translateY(10%);
-}
-  .products__description p {
-    font-size: 1.2vh;
-    text-align: justify; /* Alinea el texto en ambos extremos */
-    margin: 0 8px; /* Agrega margen interno para evitar que el texto toque los bordes */
-    padding: 3px; /* Opcional: Espaciado adicional dentro del contenedor */
-    overflow-wrap: break-word; /* Asegura que no se desborden las palabras largas */
-    word-wrap: break-word;
-    word-break: break-word;
-    box-sizing: border-box; /* Considera el padding dentro del ancho total */
-  }
-  
-  .products__description ul {
-    list-style-type: disc; /* Los puntos serán de tipo "disco" */
-    padding-left: 20px; /* Ajusta el espacio a la izquierda de la lista */
-  }
-  
-  .products__description h6 {
-    margin: .3rem;
-  }
-}
+} 
 
 /* For medium devices */
 @media screen and (min-width: 481px) and (max-width: 768px) {
@@ -961,52 +881,9 @@ img {
   }
 
   .products__logo {
-    position: absolute;
-    top: 2px; /* Reduce la distancia en pantallas pequeñas */
-    left: -40px;
-    width: 90px; /* Logo más pequeño */
-    z-index: 10;
-  }
-
-
-  .products__description {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%; /* Hace que el contenedor ocupe todo el alto disponible */
-  margin: 1rem;
-  transform: translateY(25%);
-  transition: .3s ease;
-  opacity: 0;
-  display: flex; /* Flexbox para ajustar los contenidos */
-  flex-direction: column; /* Alinea los elementos en columna */
-  justify-content: center; /* Alinea el contenido en la parte central */
-  box-sizing: border-box; /* Incluye el padding y el borde en el tamaño total */
-}
-
-  .products__description:hover {
-    opacity: 1;
-    transform: translateY(10%);
-  }
-  .products__description p {
-    font-size: 1.5vh;
-    text-align: justify; /* Alinea el texto en ambos extremos */
-    margin: 0 8px; /* Agrega margen interno para evitar que el texto toque los bordes */
-    padding: 3px; /* Opcional: Espaciado adicional dentro del contenedor */
-    overflow-wrap: break-word; /* Asegura que no se desborden las palabras largas */
-    word-wrap: break-word;
-    word-break: break-word;
-    box-sizing: border-box; /* Considera el padding dentro del ancho total */
-  }
-  
-  .products__description ul {
-    list-style-type: disc; /* Los puntos serán de tipo "disco" */
-    padding-left: 20px; /* Ajusta el espacio a la izquierda de la lista */
-  }
-  
-  .products__description h6 {
-    margin: .3rem;
+    top: 8px; /* Ajustes intermedios */
+    right: 8px;
+    width: 25px; /* Tamaño intermedio */
   }
 
   .footer__container {
@@ -1168,8 +1045,8 @@ img {
   .products__logo {
     position: absolute;
     top: 10px; /* Distancia desde la parte superior */
-    left: -25px;
-    width: 110px; /* Tamaño predeterminado del logo */
+    right: 10px; /* Distancia desde el lado derecho */
+    width: 30px; /* Tamaño predeterminado del logo */
     height: auto; /* Mantiene la proporción del logo */
     z-index: 5; /* Asegura que el logo esté sobre otros elementos */
   }
@@ -1179,25 +1056,6 @@ img {
   }
   .products__img {
     width: 95px;
-  }
-  .products__description p {
-    font-size: 2vh;
-    text-align: justify; /* Alinea el texto en ambos extremos */
-    margin: 0 8px; /* Agrega margen interno para evitar que el texto toque los bordes */
-    padding: 3px; /* Opcional: Espaciado adicional dentro del contenedor */
-    overflow-wrap: break-word; /* Asegura que no se desborden las palabras largas */
-    word-wrap: break-word;
-    word-break: break-word;
-    box-sizing: border-box; /* Considera el padding dentro del ancho total */
-  }
-  
-  .products__description ul {
-    list-style-type: disc; /* Los puntos serán de tipo "disco" */
-    padding-left: 20px; /* Ajusta el espacio a la izquierda de la lista */
-  }
-  
-  .products__description h6 {
-    margin: .3rem;
   }
   .footer__container {
     display: grid;
@@ -1336,9 +1194,9 @@ img {
   /* Estilo base para el logo en las tarjetas de productos */
   .products__logo {
     position: absolute;
-    top: 2px; /* Distancia desde la parte superior */
-    left: -45px;
-    width: 100px; /* Tamaño predeterminado del logo */
+    top: 10px; /* Distancia desde la parte superior */
+    right: 10px; /* Distancia desde el lado derecho */
+    width: 30px; /* Tamaño predeterminado del logo */
     height: auto; /* Mantiene la proporción del logo */
     z-index: 5; /* Asegura que el logo esté sobre otros elementos */
   }
@@ -1365,25 +1223,6 @@ img {
   font-weight: bold;
   margin-top: 1.8rem;
   margin-bottom: 1.8rem; /* Espacio debajo del título de categoría */
-  }
-  .products__description p {
-    font-size: 1.5vh;
-    text-align: justify; /* Alinea el texto en ambos extremos */
-    margin: 0 8px; /* Agrega margen interno para evitar que el texto toque los bordes */
-    padding: 3px; /* Opcional: Espaciado adicional dentro del contenedor */
-    overflow-wrap: break-word; /* Asegura que no se desborden las palabras largas */
-    word-wrap: break-word;
-    word-break: break-word;
-    box-sizing: border-box; /* Considera el padding dentro del ancho total */
-  }
-  
-  .products__description ul {
-    list-style-type: disc; /* Los puntos serán de tipo "disco" */
-    padding-left: 20px; /* Ajusta el espacio a la izquierda de la lista */
-  }
-  
-  .products__description h6 {
-    margin: .3rem;
   }
   .footer__container {
     display: grid;

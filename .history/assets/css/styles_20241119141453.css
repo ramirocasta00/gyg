@@ -962,8 +962,8 @@ img {
 
   .products__logo {
     position: absolute;
-    top: 2px; /* Reduce la distancia en pantallas pequeñas */
-    left: -40px;
+    top: 7px; /* Reduce la distancia en pantallas pequeñas */
+    left: -20px;
     width: 90px; /* Logo más pequeño */
     z-index: 10;
   }
@@ -1168,7 +1168,6 @@ img {
   .products__logo {
     position: absolute;
     top: 10px; /* Distancia desde la parte superior */
-    left: -25px;
     width: 110px; /* Tamaño predeterminado del logo */
     height: auto; /* Mantiene la proporción del logo */
     z-index: 5; /* Asegura que el logo esté sobre otros elementos */
@@ -1336,8 +1335,8 @@ img {
   /* Estilo base para el logo en las tarjetas de productos */
   .products__logo {
     position: absolute;
-    top: 2px; /* Distancia desde la parte superior */
-    left: -45px;
+    top: 10px; /* Distancia desde la parte superior */
+    right: ;
     width: 100px; /* Tamaño predeterminado del logo */
     height: auto; /* Mantiene la proporción del logo */
     z-index: 5; /* Asegura que el logo esté sobre otros elementos */
@@ -1365,25 +1364,6 @@ img {
   font-weight: bold;
   margin-top: 1.8rem;
   margin-bottom: 1.8rem; /* Espacio debajo del título de categoría */
-  }
-  .products__description p {
-    font-size: 1.5vh;
-    text-align: justify; /* Alinea el texto en ambos extremos */
-    margin: 0 8px; /* Agrega margen interno para evitar que el texto toque los bordes */
-    padding: 3px; /* Opcional: Espaciado adicional dentro del contenedor */
-    overflow-wrap: break-word; /* Asegura que no se desborden las palabras largas */
-    word-wrap: break-word;
-    word-break: break-word;
-    box-sizing: border-box; /* Considera el padding dentro del ancho total */
-  }
-  
-  .products__description ul {
-    list-style-type: disc; /* Los puntos serán de tipo "disco" */
-    padding-left: 20px; /* Ajusta el espacio a la izquierda de la lista */
-  }
-  
-  .products__description h6 {
-    margin: .3rem;
   }
   .footer__container {
     display: grid;
