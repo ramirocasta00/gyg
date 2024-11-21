@@ -310,11 +310,10 @@ img {
 }
 
 .sponsor__container {
-  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
-  row-gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  row-gap: 5rem;
   justify-items: center;
   align-items: center;
-  justify-content: center;
 }
 
 /*=============== SPECS ===============*/
@@ -754,7 +753,7 @@ img {
   .button--flex{
     display: flex;
     justify-content: center;
-    width: 80%; /* Asegura que el botón ocupe todo el ancho */
+    width: 60%; /* Asegura que el botón ocupe todo el ancho */
     margin: 0 auto; /* Centra el botón horizontalmente */
   }
   .case__container {
@@ -830,8 +829,7 @@ img {
   left: 0;
   right: 0;
   height: 100%; /* Hace que el contenedor ocupe todo el alto disponible */
-  margin-top: 2rem;  /* Margen superior */
-  margin-bottom: 2rem;  /* Margen inferior */
+  margin: 1rem;
   transform: translateY(25%);
   transition: .3s ease;
   opacity: 0;
@@ -841,11 +839,10 @@ img {
   box-sizing: border-box; /* Incluye el padding y el borde en el tamaño total */
 }
 
-.products__description.active {
+.products__description:hover {
   opacity: 1;
   transform: translateY(10%);
 }
-
 .products__description p {
   font-size: 1vh;
   text-align: justify; /* Alinea el texto en ambos extremos */
@@ -854,40 +851,17 @@ img {
   overflow-wrap: break-word; /* Asegura que no se desborden las palabras largas */
   word-wrap: break-word;
   word-break: break-word;
-  box-sizing: border-box; /* Considera el padding dentro del ancho total */
-}
+    box-sizing: border-box; /* Considera el padding dentro del ancho total */
+  }
   
-.products__description ul {
-  list-style-type: disc; /* Los puntos serán de tipo "disco" */
-  padding-left: 20px; /* Ajusta el espacio a la izquierda de la lista */
-}
+  .products__description ul {
+    list-style-type: disc; /* Los puntos serán de tipo "disco" */
+    padding-left: 20px; /* Ajusta el espacio a la izquierda de la lista */
+  }
   
-.products__description h6 {
-  margin-top: 1rem;
-  font-size: .5rem;
-}
-
-/* Por defecto, el logo y la imagen están visibles */
-.products__logo,
-.products__img {
-  opacity: 1;
-  transition: opacity 0.3s ease; /* Animación para el cambio de visibilidad */
-}
-
-/* Cuando el card está "activado" (clickeado), ocultamos la imagen y el logo */
-.products__card.active .products__logo,
-.products__card.active .products__img,
-.products__card.active .products__title {
-  opacity: 0;
-  pointer-events: none; /* Evita que el logo y la imagen sigan interactuando */
-}
-
-/* Aseguramos que la descripción sea visible */
-.products__card.active .products__description {
-  opacity: 1;
-  transform: translateY(10%);
-  margin-bottom: 1rem;  /* Margen superior */
-}
+  .products__description h6 {
+    margin: .3rem;
+  }
 }
 
 /* For medium devices */
@@ -1276,13 +1250,6 @@ img {
   }
   .sponsor__img {
     width: 180px;
-  }
-  .sponsor__container {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    row-gap: 1.5rem;
-    justify-items: center;
-    align-items: center;
-    justify-content: center;
   }
   .discount .button {
     display: none;

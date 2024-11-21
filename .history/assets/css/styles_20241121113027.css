@@ -306,15 +306,14 @@ img {
 
 /*=============== SPONSOR ===============*/
 .sponsor__img {
-  width: 90px;
+  width: 50px;
 }
 
 .sponsor__container {
-  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   row-gap: 1.5rem;
   justify-items: center;
   align-items: center;
-  justify-content: center;
 }
 
 /*=============== SPECS ===============*/
@@ -754,7 +753,7 @@ img {
   .button--flex{
     display: flex;
     justify-content: center;
-    width: 80%; /* Asegura que el botón ocupe todo el ancho */
+    width: 60%; /* Asegura que el botón ocupe todo el ancho */
     margin: 0 auto; /* Centra el botón horizontalmente */
   }
   .case__container {
@@ -1276,13 +1275,6 @@ img {
   }
   .sponsor__img {
     width: 180px;
-  }
-  .sponsor__container {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    row-gap: 1.5rem;
-    justify-items: center;
-    align-items: center;
-    justify-content: center;
   }
   .discount .button {
     display: none;

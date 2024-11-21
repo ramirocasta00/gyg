@@ -79,13 +79,10 @@ window.addEventListener('scroll', scrollActive)
 /*================ HOVER SMARTPHONES ==================*/
 document.querySelectorAll('.products__card').forEach(card => {
     card.addEventListener('click', () => {
-      // Alternamos la clase "active" al hacer clic
-        card.classList.toggle('active');
+    card.querySelector('.products__description').classList.toggle('active');
     });
 });
-
-
-
+  
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
 const sr = ScrollReveal({

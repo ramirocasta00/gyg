@@ -310,11 +310,10 @@ img {
 }
 
 .sponsor__container {
-  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
-  row-gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  row-gap: 5rem;
   justify-items: center;
   align-items: center;
-  justify-content: center;
 }
 
 /*=============== SPECS ===============*/
@@ -754,7 +753,7 @@ img {
   .button--flex{
     display: flex;
     justify-content: center;
-    width: 80%; /* Asegura que el botón ocupe todo el ancho */
+    width: 60%; /* Asegura que el botón ocupe todo el ancho */
     margin: 0 auto; /* Centra el botón horizontalmente */
   }
   .case__container {
@@ -864,7 +863,7 @@ img {
   
 .products__description h6 {
   margin-top: 1rem;
-  font-size: .5rem;
+  font
 }
 
 /* Por defecto, el logo y la imagen están visibles */
@@ -1276,13 +1275,6 @@ img {
   }
   .sponsor__img {
     width: 180px;
-  }
-  .sponsor__container {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    row-gap: 1.5rem;
-    justify-items: center;
-    align-items: center;
-    justify-content: center;
   }
   .discount .button {
     display: none;

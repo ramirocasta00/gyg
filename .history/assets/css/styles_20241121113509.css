@@ -754,7 +754,7 @@ img {
   .button--flex{
     display: flex;
     justify-content: center;
-    width: 80%; /* Asegura que el botón ocupe todo el ancho */
+    width: 60%; /* Asegura que el botón ocupe todo el ancho */
     margin: 0 auto; /* Centra el botón horizontalmente */
   }
   .case__container {
