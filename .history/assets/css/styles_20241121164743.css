@@ -436,7 +436,7 @@ img {
 
 .products__card {
   position: relative;
-  height: 170px;
+  height: 132px;
   background-color: var(--container-color);
   padding: .75rem;
   border-radius: .5rem;
@@ -1196,7 +1196,7 @@ img {
     z-index: 5; /* Asegura que el logo esté sobre otros elementos */
   }
   .products__card {
-    height: 170px;
+    height: 200px;
     padding: .85rem;
   }
   .products__img {
@@ -1372,7 +1372,7 @@ img {
     z-index: 5; /* Asegura que el logo esté sobre otros elementos */
   }
   .products__card {
-    height: 170px;
+    height: 180px;
     padding: 1.4rem;
   }
   .products__img {

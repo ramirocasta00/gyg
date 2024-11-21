@@ -97,10 +97,10 @@ if (isTouchDevice) {
     });
 
     card.addEventListener('mouseleave', () => {
-        const description = card.querySelector('.products__description');
-        description.classList.remove('active');
+      const description = card.querySelector('.products__description');
+      description.classList.remove('active');
     });
-});
+  });
 }
 
 document.querySelectorAll('.products__card').forEach(card => {

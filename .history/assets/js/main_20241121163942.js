@@ -82,25 +82,24 @@ const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
 if (isTouchDevice) {
   // Configuración para pantallas táctiles
     document.querySelectorAll('.products__card').forEach(card => {
-        card.addEventListener('click', () => {
-        const description = card.querySelector('.products__description');
-        description.classList.toggle('active');
+    card.addEventListener('click', () => {
+      const description = card.querySelector('.products__description');
+      description.classList.toggle('active');
     });
-});
-
+  });
 } else {
   // Configuración para dispositivos no táctiles
-    document.querySelectorAll('.products__card').forEach(card => {
-        card.addEventListener('mouseenter', () => {
-        const description = card.querySelector('.products__description');
-        description.classList.add('active');
+  document.querySelectorAll('.products__card').forEach(card => {
+    card.addEventListener('mouseenter', () => {
+      const description = card.querySelector('.products__description');
+      description.classList.add('active');
     });
 
     card.addEventListener('mouseleave', () => {
-        const description = card.querySelector('.products__description');
-        description.classList.remove('active');
+      const description = card.querySelector('.products__description');
+      description.classList.remove('active');
     });
-});
+  });
 }
 
 document.querySelectorAll('.products__card').forEach(card => {

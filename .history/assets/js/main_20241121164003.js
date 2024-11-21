@@ -100,7 +100,7 @@ if (isTouchDevice) {
         const description = card.querySelector('.products__description');
         description.classList.remove('active');
     });
-});
+  });
 }
 
 document.querySelectorAll('.products__card').forEach(card => {

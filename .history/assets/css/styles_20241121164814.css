@@ -436,7 +436,7 @@ img {
 
 .products__card {
   position: relative;
-  height: 170px;
+  height: 132px;
   background-color: var(--container-color);
   padding: .75rem;
   border-radius: .5rem;

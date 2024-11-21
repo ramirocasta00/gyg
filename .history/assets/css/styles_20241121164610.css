@@ -436,7 +436,7 @@ img {
 
 .products__card {
   position: relative;
-  height: 170px;
+  height: 132px;
   background-color: var(--container-color);
   padding: .75rem;
   border-radius: .5rem;
@@ -475,7 +475,16 @@ img {
 }
 
 .products__card:hover .products__img,
-.products__card:hover .products__title,
+.products__card:hover .prod{
+  opacity: 0; /* Oculta la imagen del producto al hacer hover */
+  transition: opacity 0.3s ease; /* Suaviza el cambio de visibilidad */
+}
+
+.products__card:hover .products__title {
+  opacity: 0; /* Oculta la imagen del producto al hacer hover */
+  transition: opacity 0.3s ease; /* Suaviza el cambio de visibilidad */
+}
+
 .products__card:hover .products__logo {
   opacity: 0; /* Oculta la imagen del producto al hacer hover */
   transition: opacity 0.3s ease; /* Suaviza el cambio de visibilidad */
@@ -1196,7 +1205,7 @@ img {
     z-index: 5; /* Asegura que el logo esté sobre otros elementos */
   }
   .products__card {
-    height: 170px;
+    height: 152px;
     padding: .85rem;
   }
   .products__img {
@@ -1372,7 +1381,7 @@ img {
     z-index: 5; /* Asegura que el logo esté sobre otros elementos */
   }
   .products__card {
-    height: 170px;
+    height: 140px;
     padding: 1.4rem;
   }
   .products__img {
